@@ -3,7 +3,12 @@ import Template from "@/components/template";
 export default function GetRekt() {
   return (
     <Template>
-      <div className="text-5xl">Get Rekt Power Creep</div>
+      <a
+        href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley"
+        className="text-5xl text-orange-300 hover:text-fuchsia-500"
+      >
+        Get Rekt Power Creep
+      </a>
     </Template>
   );
 }

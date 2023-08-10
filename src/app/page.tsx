@@ -12,7 +12,7 @@ export default function Home() {
         <div className="flex md:flex-row flex-col gap-8">
           <div className="flex flex-col">
             <p className="text-sm font-sans">
-              Hello! I&apos;m a electical engineer turned designer/frontend
+              Hello! I&apos;m a electrical engineer turned designer/frontend
               developer. Come have a look at my stuff.
             </p>
             <div className="flex flex-row w-full text-left my-6 flex-wrap gap-x-2 gap-y-4">

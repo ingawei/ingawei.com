@@ -10,8 +10,8 @@ export default function Resume() {
         width="100%"
       />
       <p className="text-xs font-sans mt-2">
-        I know it's small and also only updated to my electrical engineering
-        days deal with it.
+        I know it&apos;s small and also only updated to my electrical
+        engineering days deal with it.
       </p>
     </Template>
   );

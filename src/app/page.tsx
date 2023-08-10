@@ -36,7 +36,7 @@ export default function Home() {
   );
 }
 
-export function Link(props: { href: string; text: string }) {
+function Link(props: { href: string; text: string }) {
   const { href, text } = props;
   return (
     <div className="relative ml-2">

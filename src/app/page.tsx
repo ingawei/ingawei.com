@@ -1,3 +1,4 @@
+import { Project } from "@/components/project";
 import Template from "@/components/template";
 import Image from "next/image";
 
@@ -6,15 +7,45 @@ export default function Home() {
     <Template>
       <div className="gap-4 flex flex-col">
         <div className="flex flex-col gap-2 w-full">
-          <div className="text-3xl text-orange-300">Inga Wei</div>
-          <div className="opacity-50">San Francisco, CA</div>
+          <div className="text-3xl font-shippori">Inga Wei</div>
+          <div className="text-slate-600">
+            <span className="text-green-600">Designer/Frontend Engineer</span>{" "}
+            based in San Francisco, CA
+          </div>
+        </div>
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+          <Project
+            href="/manifold"
+            imgsrc="/manifold/logo.svg"
+            title="Manifold Markets"
+            job="Designer/Frontend Engineer"
+          />
+          <Project
+            imgsrc="/manifold-love/manifold_love_logo.svg"
+            title="Manifold Love"
+            job="Designer/Frontend Engineer"
+            href={"/manifoldlove"}
+          />
+          <Project
+            imgsrc="/ridge/logo.png"
+            imgSize="h-[90px]"
+            title="Ridge Web3"
+            job="Frontend Engineer"
+            href={"/ridge"}
+          />
+          <Project
+            imgsrc="/rwtp/logo.png"
+            imgSize="h-[120px]"
+            title="RWTP, YC23"
+            job="Designer/Frontend Engineer"
+            href={"/rwtp"}
+          />
+          <div>Uganda Caring Hands</div>
+          <div>Solstice Pay</div>
+          <div>Resume</div>
         </div>
         <div className="flex md:flex-row flex-col gap-8">
           <div className="flex flex-col">
-            <p className="text-sm font-sans">
-              Hello! I&apos;m a electrical engineer turned designer/frontend
-              developer. Come have a look at my stuff.
-            </p>
             <div className="flex flex-row w-full text-left my-6 flex-wrap gap-x-2 gap-y-4">
               <Link href="/resume" text="Resume" />
               <Link
@@ -23,12 +54,6 @@ export default function Home() {
               />
               <Link href="https://github.com/ingawei" text="Github" />
             </div>
-          </div>
-          <div className="flex flex-col gap-1 md:w-4/5">
-            <img src="inga.jpeg" />
-            <span className="text-xs font-sans opacity-50">
-              Pictured here in 2019 on my study abroad in France
-            </span>
           </div>
         </div>
       </div>
